@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Edu+NSW+ACT+Foundation&family=Montserrat:wght@400;700&family=Oswald:wght@200;500&family=Poppins:ital,wght@0,200;0,300;1,200;1,300&family=Quicksand:wght@300;400;500;700&family=Roboto:ital,wght@0,400;0,500;1,300&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Next Rounded LT Pro Bold'), local('DIN-Next-LT-Pro-Next-Rounded-LT-Pro-Bold'),
+        url('DINNextRoundedLTPro-Bold.woff2') format('woff2'),
+        url('DINNextRoundedLTPro-Bold.woff') format('woff'),
+        url('DINNextRoundedLTPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+:root{
+    --primario: #047BC3;
+    --secundario: #9EC9B4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.6px;
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    position: fixed;
+    width: 320px;
+    border-right: 2px solid gray;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    box-shadow: gray 0 0 4px
+}
+
+#main-doc{
+    margin-left: 320px;
+    padding: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 0.9rem 2rem;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+a:hover{
+    text-shadow: gray 0 0 1px;
+    font-size:1.1rem;
+}
+
+main header{
+    font-size:1.8rem;
+}
+
+nav header{
+    font-size: 2rem;
+    margin: 1rem auto;
+}
+
+nav li{
+    border-top: 1px solid gray;
+    width: 100%;
+    position: relative;
+}
+
+main p{
+    margin: 1rem 1.5rem;
+}
+
+#main-doc li{
+    margin:1rem 1.5rem 1rem 4rem;
+}
+
+code{
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 2rem;
+    display: block;
+    font-family: sans-serif;
+}
+
+#mdn{
+    color: blue;
+    text-decoration: underline;
+    padding:0;
+    margin:0;
+    display:inline;
+}
+
+#mdn:hover{
+    font-size: 1rem;
+}
+
+@media (max-width:800px){
+    #navbar{
+        position: unset;
+        width: 100%;
+        border-right: 0;
+    }
+    #main-doc{
+        margin: 0;
+        width: calc(100% - 4rem);
+        padding: 2rem;
+    }
+    #navbar a{
+        text-align: center;
+    }
+}
+
+@media (max-width:450px){
+    #main-doc{
+        padding: 1rem;
+        width: calc(100% - 2rem);
+    }
+}
